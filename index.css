@@ -1,0 +1,295 @@
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-color: #0D0D0D;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+h1{
+    font-size: 3.5em;
+}
+h2{
+    font-size: 2.7em;
+}
+h3{
+    font-size: 2em;
+}
+p{
+    font-size: 1.25em;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    font-size: 1.25em;
+}
+
+button{
+    font-size: 1em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: black;
+    background-color: #D35400;
+}
+
+button:hover{
+    background-color: #7a370a;
+}
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-acento{
+    color: #D35400;
+}
+
+header{
+    background-color: #0D0D0D;
+}
+.bytesized-regular {
+    font-family: "Bytesized", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+header .logo{
+    font-family: "Bytesized", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 25px 30px;
+    color: #D35400;
+    font-size: 1.6em;
+}
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a {
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #B57228;
+}
+
+header a:hover{
+    color: #7a370a;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    color: #D35400;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/fotopc.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+#descripcion .container{
+    text-align: center;
+    padding: 200px 12px;
+    color: #D35400;
+}
+
+.img-container img{
+    width: 100px;
+    border-radius: 50%;
+}
+
+#mis-proyectos{
+    background-color: #D9D9D9;
+    color: #D35400;
+}
+
+#mis-proyectos p{
+    display: none;
+}
+
+#mis-proyectos .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 100px 0px;
+}
+#mis-proyectos .container .h2{
+    margin: 200px 0;
+}
+#mis-proyectos .container .carta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+
+    box-shadow: 2px 2px 10px #D35400;
+
+}
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/desktop-image.png");
+
+}
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/desktop-image.png");
+
+}
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/desktop-image.png");
+    
+}
+
+#diplomas .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#diplomas li{
+    margin: 20px 0;
+    color: #D35400;
+}
+
+#linkedin{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    padding: 150px 12px;
+
+    background-color: #D9D9D9;
+
+    color: #D35400;
+    height: 80vh;
+
+}
+
+#linkedin h2{
+    font-size: 9vw;
+}
+
+footer{
+    background-color: #121212;
+    
+}
+
+footer p{
+    margin: 0;
+    color: rgb(100,100,100);
+}
+
+footer .container{
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+@media(min-width: 720px){
+
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+    #linkedin h2{
+        font-size: 5vh;
+    }
+
+    #mis-proyectos .container .proyectos{
+        display: flex;
+        justify-content: center;
+    }
+    #mis-proyectos .container .proyectos p{
+        display: block;
+        padding-top: 250px;
+    }
+    #mis-proyectos .container .proyectos h3{
+        margin: 0;
+    }
+    #mis-proyectos .container .proyectos .carta{
+        background-size: 100% 250px;
+        background-position-y: 0;
+        max-width: 500px;
+        background-color: #0D0D0D;
+    }
+    #diplomas{
+
+        background-image: url("media/desktop-image.png");
+        background-repeat: no-repeat;
+        background-size: 500px 400px;
+        background-position: calc(100vw - 700px) 250px;
+
+    }
+    #diplomas .container{
+        text-align: initial;
+    }
+    #diplomas ul{
+        margin-left: 100px;
+    }
+}
