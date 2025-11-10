@@ -149,7 +149,6 @@ header a:hover {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 100px 0px;
 }
 #mis-proyectos .container .h2 {
   margin: 0;
@@ -160,25 +159,16 @@ header a:hover {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
+  padding: 1rem;
 
-  padding: 50px;
-  margin: 20px;
   border-radius: 15px;
+}
+#mis-proyectos .container .carta img {
+  max-width: 100%;
+  margin-bottom: 1rem;
 }
 .titulo {
   margin: 0 10rem;
-}
-
-.carta:first-child {
-  background-image: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),
-    url("media/red-social-videojuegos.png");
 }
 
 #diplomas .container {
@@ -187,7 +177,7 @@ header a:hover {
 }
 
 #diplomas li {
-  margin: 20px 0;
+  margin: 0.5rem;
 }
 
 #diplomas .container ul li a {
@@ -266,19 +256,19 @@ footer .container {
   #mis-proyectos .container .proyectos {
     display: flex;
     justify-content: center;
+    margin: 3rem;
   }
   #mis-proyectos .container .proyectos p {
     display: block;
-    padding-top: 250px;
   }
+
   #mis-proyectos .container .proyectos h3 {
     margin: 0;
   }
   #mis-proyectos .container .proyectos .carta {
-    background-size: 100% 250px;
-    background-position-y: 0;
     max-width: 500px;
     background-color: #0d0d0d;
+    padding: 1rem;
   }
   #diplomas {
     background-image: url("media/working-project.png");
