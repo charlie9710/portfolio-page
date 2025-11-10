@@ -194,6 +194,9 @@ header a:hover {
   color: #000000;
   font-weight: bold;
 }
+#diplomas .container ul {
+  padding: 0;
+}
 
 #linkedin {
   display: flex;
@@ -286,7 +289,4 @@ footer .container {
   #diplomas .container {
     text-align: initial;
   }
-  /* #diplomas ul {
-    margin-left: 100px;
-  } */
 }
