@@ -5,7 +5,7 @@
 body {
   font-family: "Roboto", sans-serif;
   margin: 0;
-  background-color: #0d0d0d;
+  background-color: #f9fafb;
 }
 html {
   scroll-behavior: smooth;
@@ -57,11 +57,13 @@ button:hover {
 }
 
 .color-acento {
-  color: white;
+  color: #111827;
 }
 
 header {
-  background-color: #0d0d0d;
+  background-color: #f3f4f6;
+
+  color: #111827;
 }
 .bytesized-regular {
   font-family: "Bytesized", sans-serif;
@@ -74,7 +76,7 @@ header .logo {
   font-style: normal;
   margin: 0;
   padding: 25px 30px;
-  color: white;
+  color: #111827;
   font-size: 1.6em;
 }
 header .container {
@@ -94,11 +96,11 @@ header a {
   padding: 5px 12px;
   text-decoration: none;
   font-weight: bold;
-  color: white;
+  color: #111827;
 }
 
 header a:hover {
-  color: rgb(120, 120, 120);
+  color: #6b7280;
 }
 
 #hero {
@@ -132,8 +134,8 @@ header a:hover {
 }
 
 #mis-proyectos {
-  background-color: #d9d9d9;
-  color: white;
+  background-color: #111827;
+  color: #f3f4f6;
 }
 
 #mis-proyectos p {
@@ -164,8 +166,6 @@ header a:hover {
   padding: 50px;
   margin: 20px;
   border-radius: 15px;
-
-  box-shadow: 2px 2px 10px black;
 }
 .titulo {
   margin: 0 10rem;
@@ -203,7 +203,11 @@ header a:hover {
 
 #diplomas li {
   margin: 20px 0;
-  color: white;
+}
+
+#diplomas .container ul li a {
+  color: #111827;
+  font-weight: bold;
 }
 
 #linkedin {
@@ -215,9 +219,9 @@ header a:hover {
 
   padding: 150px 12px;
 
-  background-color: #d9d9d9;
+  background-color: #111827;
 
-  color: white;
+  color: #f3f4f6;
   height: 80vh;
 }
 
@@ -248,9 +252,9 @@ footer .container {
   border-radius: 10px;
 }
 .descripcion-perfil {
-  text-align: left;
+  text-align: justify;
   margin: 0 5rem;
-  color: white;
+  color: black;
 }
 
 @media (min-width: 720px) {
