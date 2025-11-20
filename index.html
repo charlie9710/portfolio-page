@@ -1,94 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Carlos Encina Page</title>
+    <title>Carlos Encina - Portafolio</title>
     <link rel="stylesheet" href="index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Bytesized&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Bytesized&family=Roboto:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
+    <!-- FontAwesome para iconos (opcional, pero recomendado para el menú hamburguesa) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
     <header>
       <div class="container">
         <p class="logo">Carlos Encina</p>
-        <nav>
+        <div class="menu-toggle" id="mobile-menu">
+          <i class="fas fa-bars"></i>
+        </div>
+        <nav class="nav-links">
           <a href="#mis-proyectos">Proyectos</a>
           <a href="#diplomas">Diplomas</a>
           <a href="#descripcion">Sobre mí</a>
           <a href="#linkedin">Linkedin</a>
+          <a href="#contacto">Contáctame</a>
         </nav>
       </div>
     </header>
+
     <section id="hero">
-      <h1 class="titulo" style="color: white">
-        Carlos Encina <br />
-        Página de proyectos
-      </h1>
-      <button style="margin-top: 2rem">
-        <a
-          style="color: inherit; text-decoration: none"
-          href="https://github.com/charlie9710"
-          >Ir al GitHub</a
-        >
-      </button>
+      <div class="hero-content fade-in">
+        <h1 class="titulo">
+          Carlos Encina <br />
+          <span style="font-size: 0.6em; opacity: 0.9;">No lo sé todo , pero puedo aprenderlo todo</span>
+        </h1>
+        <div style="margin-top: 2rem">
+          <a href="https://github.com/charlie9710" target="_blank" class="btn">Ir al GitHub</a>
+        </div>
+      </div>
     </section>
 
-    <section id="descripcion">
-      <div class="container">
-        <div class="img-container">
-          <img src="media/fotoperfil.jpeg" alt="" />
+    <section id="descripcion" class="section-padding">
+      <div class="container fade-in">
+        <div class="profile-img-container">
+          <img src="media/fotoperfil.jpeg" alt="Carlos Encina" />
         </div>
         <h2><span class="color-acento">Carlos Encina</span></h2>
         <p class="descripcion-perfil">
-          Soy Analista Programador y Desarrollador de Software con
-          especialización en el desarrollo Back-End, principalmente utilizando
-          Java y el ecosistema Spring (Spring Boot, Spring Security, Spring
-          Data, entre otros). Me enfoco en construir aplicaciones robustas,
-          seguras y escalables, aplicando buenas prácticas de desarrollo de
-          software. Tengo experiencia trabajando con bases de datos relacionales
-          como Oracle, MySQL y PostgreSQL, y una alta capacidad de adaptación
-          para aprender nuevas tecnologías y entornos rápidamente. Aunque mi
-          principal área de interés es el backend, también he desarrollado
-          proyectos en el área Front-End, trabajando con HTML, CSS y JavaScript,
-          y utilizando frameworks como Angular. Entre abril y junio del 2025
-          realicé mi práctica profesional en la empresa Cabeza Digital, donde
-          participé en el desarrollo Front-End de aplicaciones web. Durante mi
-          formación universitaria, también he trabajado con Django Rest
-          Framework, lo que me ha permitido adquirir una visión integral del
-          desarrollo full stack y comprender la comunicación entre las capas
-          front-end y back-end. Me caracterizo por mi compromiso con la calidad
-          del código, la organización en el trabajo en equipo y la búsqueda
-          constante de crecimiento profesional en el área de desarrollo de
-          software.
+          Desarrollador de Software especializado en Back-End con sólida experiencia en el ecosistema Java y Spring Framework. Mi enfoque se centra en la ingeniería de software fundamentada, diseñando arquitecturas escalables, mantenibles y orientadas a resolver problemas de negocio complejos. <br>
+Domino el stack Spring Boot, Spring Security, Spring Data JPA y Spring Cloud, aplicando patrones de diseño, principios SOLID y arquitecturas limpias para construir APIs REST robustas y microservicios. Trabajo con bases de datos relacionales (Oracle, MySQL, PostgreSQL) optimizando consultas y modelando datos siguiendo las mejores prácticas.<br>
+Tengo un marcado interés en tecnologías emergentes e inteligencia artificial, explorando activamente su integración en soluciones empresariales modernas. Esto incluye la implementación de servicios inteligentes, automatización de procesos y el uso de APIs de IA para agregar valor a las aplicaciones.<br>
+Durante mi práctica profesional en Cabeza Digital (abril-junio 2025), participé en el desarrollo de aplicaciones web utilizando tecnologías front-end (Angular, HTML, CSS, JavaScript), lo que me ha dado una perspectiva full-stack que facilita la comunicación entre equipos y la comprensión integral de los proyectos.<br>
+Mi formación incluye también trabajo con Django Rest Framework, consolidando mi versatilidad tecnológica. Me caracterizo por mi compromiso con la calidad del código, la documentación técnica y el trabajo colaborativo en entornos ágiles. Busco constantemente evolucionar profesionalmente, manteniéndome actualizado con las tendencias del desarrollo de software y las mejores prácticas de la industria.
         </p>
       </div>
     </section>
 
-    <section id="mis-proyectos">
+    <section id="mis-proyectos" class="section-padding">
       <div class="container">
-        <h2>Mis proyectos</h2>
-        <div class="proyectos">
-          <div class="carta">
-            <img src="media/red-social-videojuegos.png" alt="" />
-            <h3>Red social de videojuegos</h3>
-            <p style="text-align: justify">
-              Esta es una red social de videojuegos, en la cual los usuarios
-              pueden publicar analisis, curiosidades y guías, los usuarios
-              pueden interactuar mediante comentarios en las publicaciones y
-              calificando los videojuegos.
+        <h2 class="fade-in">Mis proyectos</h2>
+        <div class="proyectos-grid">
+          <!-- Proyecto 1 -->
+          <div class="project-card fade-in">
+            <img src="media/red-social-videojuegos.png" alt="Red social de videojuegos" />
+            <h3>Plataforma Social de Gaming</h3>
+            <p>
+             Red social especializada donde los usuarios pueden crear y compartir contenido sobre videojuegos: análisis críticos, guías estratégicas, curiosidades y generar un sistema de ranking democrático para la comunidad.
             </p>
             <a
               href="https://github.com/charlie9710/RespawnReviews"
               target="_blank"
-              style="font-weight: bold"
+              class="btn"
+              style="margin-bottom: 1rem;"
               >+Info</a
             >
-            <video width="100%" controls style="margin-top: 15px">
+            <video controls>
               <source
                 src="https://res.cloudinary.com/dwgk6byqs/video/upload/v1762811554/video-Respawn-Reviews_kjl8g3.mp4"
                 type="video/mp4"
@@ -100,70 +89,87 @@
       </div>
     </section>
 
-    <section id="diplomas">
+    <section id="diplomas" class="section-padding">
       <div class="container">
-        <ul style="list-style: none">
-          <li>
-            <a href="diplomas/titulo.pdf" target="_blank"
-              >Titulo analista programador</a
-            >
-          </li>
-          <li>
-            <a href="diplomas/diploma-arquitectura-software.pdf" target="_blank"
-              >Arquitectura de software</a
-            >
-          </li>
-          <li>
+        <h2 class="fade-in" style="text-align: center;">Diplomas y Certificaciones</h2>
+        <div class="diplomas-grid fade-in">
+          <div class="diploma-item">
+            <a href="diplomas/titulo.pdf" target="_blank">Titulo Analista Programador</a>
+          </div>
+          <div class="diploma-item">
+            <a href="diplomas/diploma-arquitectura-software.pdf" target="_blank">Arquitectura de Software</a>
+          </div>
+          <div class="diploma-item">
             <a href="diplomas/diploma-backend.pdf" target="_blank">Backend</a>
-          </li>
-          <li>
-            <a href="diplomas/diploma-fundamentos-db.pdf" target="_blank"
-              >Fundamentos base de datos</a
-            >
-          </li>
-          <li>
-            <a href="diplomas/diploma-fundamentos-python.pdf" target="_blank"
-              >Fundamentos python</a
-            >
-          </li>
-          <li>
+          </div>
+          <div class="diploma-item">
+            <a href="diplomas/diploma-fundamentos-db.pdf" target="_blank">Fundamentos Base de Datos</a>
+          </div>
+          <div class="diploma-item">
+            <a href="diplomas/diploma-fundamentos-python.pdf" target="_blank">Fundamentos Python</a>
+          </div>
+          <div class="diploma-item">
             <a href="diplomas/diploma-java-oop.pdf" target="_blank">POO Java</a>
-          </li>
-          <li>
-            <a href="diplomas/diploma-java-persistencia.pdf"
-              >Persistencia en java</a
-            >
-          </li>
-          <li>
-            <a href="diplomas/diploma-java-spring-security.pdf"
-              >Spring security</a
-            >
-          </li>
-          <li><a href="diplomas/diploma-java.pdf">Java</a></li>
-          <li>
-            <a href="diplomas/diploma-python-funciones.pdf">Python funciones</a>
-          </li>
-          <li><a href="diplomas/diploma-python-pip.pdf">Python PIP</a></li>
-          <li><a href="diplomas/diploma-sql-mysql2018.pdf">Mysql</a></li>
-          <li><a href="diplomas/diploma-terminal.pdf">Terminal</a></li>
-          <li><a href="diplomas/diploma-html-css.pdf">HTML Y CSS</a></li>
-        </ul>
+          </div>
+          <div class="diploma-item">
+            <a href="diplomas/diploma-java-persistencia.pdf" target="_blank">Persistencia en Java</a>
+          </div>
+          <div class="diploma-item">
+            <a href="diplomas/diploma-java-spring-security.pdf" target="_blank">Spring Security</a>
+          </div>
+          <div class="diploma-item">
+            <a href="diplomas/diploma-java.pdf" target="_blank">Java</a>
+          </div>
+          <div class="diploma-item">
+            <a href="diplomas/diploma-python-funciones.pdf" target="_blank">Python Funciones</a>
+          </div>
+          <div class="diploma-item">
+            <a href="diplomas/diploma-python-pip.pdf" target="_blank">Python PIP</a>
+          </div>
+          <div class="diploma-item">
+            <a href="diplomas/diploma-sql-mysql2018.pdf" target="_blank">MySQL</a>
+          </div>
+          <div class="diploma-item">
+            <a href="diplomas/diploma-terminal.pdf" target="_blank">Terminal</a>
+          </div>
+          <div class="diploma-item">
+            <a href="diplomas/diploma-html-css.pdf" target="_blank">HTML y CSS</a>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="linkedin">
-      <h2>Entra a mi LinkedIn</h2>
-      <a
-        class="linkedin-enlace"
-        href="https://www.linkedin.com/in/carlos-encina-b67189297/"
-        target="_blank"
-        >Entrar</a
-      >
+    <section id="linkedin" class="section-padding">
+      <div class="container fade-in">
+        <h2>Entra a mi LinkedIn</h2>
+        <a
+          class="linkedin-btn"
+          href="https://www.linkedin.com/in/carlos-encina-b67189297/"
+          target="_blank"
+          >Entrar <i class="fab fa-linkedin"></i></a
+        >
+      </div>
+    </section>
+
+    <section id="contacto" class="section-padding">
+      <div class="container fade-in" style="text-align: center;">
+        <h2>Contáctame</h2>
+        <p style="max-width: 600px; margin: 0 auto 2rem;">
+          ¿Tienes algún proyecto en mente o simplemente quieres saludar? 
+          ¡Estaré encantado de responderte!
+        </p>
+        <a href="mailto:carlos.encina.dev@gmail.com" class="btn">
+          <i class="fas fa-envelope"></i> Enviar Correo
+        </a>
+        <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--text-muted);">
+          carlos.encina.dev@gmail.com
+        </p>
+      </div>
     </section>
 
     <footer>
       <div class="container">
-        <p>&copy;Carlos Encina 2025</p>
+        <p>&copy; Carlos Encina 2025</p>
       </div>
     </footer>
     <script src="app.js"></script>
