@@ -52,46 +52,6 @@
         </div>
       </div>
     </section>
-
-    <section id="descripcion" class="section-padding">
-      <div class="container fade-in">
-        <div class="profile-img-container">
-          <img src="media/fotoperfil.jpeg" alt="Carlos Encina" />
-        </div>
-        <h2><span class="color-acento">Carlos Encina</span></h2>
-        <p class="descripcion-perfil">
-          Desarrollador de Software especializado en Back-End con sólida
-          experiencia en el ecosistema Java y Spring Framework. Mi enfoque se
-          centra en la ingeniería de software fundamentada, diseñando
-          arquitecturas escalables, mantenibles y orientadas a resolver
-          problemas de negocio complejos. <br />
-          Domino el stack Spring Boot, Spring Security, Spring Data JPA y Spring
-          Cloud, aplicando patrones de diseño, principios SOLID y arquitecturas
-          limpias para construir APIs REST robustas y microservicios. Trabajo
-          con bases de datos relacionales (Oracle, MySQL, PostgreSQL)
-          optimizando consultas y modelando datos siguiendo las mejores
-          prácticas.<br />
-          Tengo un marcado interés en tecnologías emergentes e inteligencia
-          artificial, explorando activamente su integración en soluciones
-          empresariales modernas. Esto incluye la implementación de servicios
-          inteligentes, automatización de procesos y el uso de APIs de IA para
-          agregar valor a las aplicaciones.<br />
-          Durante mi práctica profesional en Cabeza Digital (abril-junio 2025),
-          participé en el desarrollo de aplicaciones web utilizando tecnologías
-          front-end (Angular, HTML, CSS, JavaScript), lo que me ha dado una
-          perspectiva full-stack que facilita la comunicación entre equipos y la
-          comprensión integral de los proyectos.<br />
-          Mi formación incluye también trabajo con Django Rest Framework,
-          consolidando mi versatilidad tecnológica. Me caracterizo por mi
-          compromiso con la calidad del código, la documentación técnica y el
-          trabajo colaborativo en entornos ágiles. Busco constantemente
-          evolucionar profesionalmente, manteniéndome actualizado con las
-          tendencias del desarrollo de software y las mejores prácticas de la
-          industria.
-        </p>
-      </div>
-    </section>
-
     <section id="mis-proyectos" class="section-padding">
       <div class="container">
         <h2 class="fade-in">Mis proyectos</h2>
@@ -124,7 +84,43 @@
               Tu navegador no soporta la reproducción de videos.
             </video>
           </div>
+          <div class="project-card fade-in">
+            <img
+              src="media/PencilCli.png"
+              alt="Herramienta de CLI para recordatorios"
+            />
+            <h3>Herramienta CLI para recordatorios diarios</h3>
+            <p>
+              Script batch para Windows que muestra tus tareas diarias al iniciar el sistema. Puedes incluir tareas en cualquier fecha y cada vez que inicies windows te va a recordar las tareas del día de hoy, por lo que no tendrás que recordar fechas importantes.
+            </p>
+            <a
+              href="https://github.com/charlie9710/pencil-cli"
+              target="_blank"
+              class="btn"
+              style="margin-bottom: 1rem"
+              >+Info</a
+            >
+            <!-- <video controls>
+              <source
+                src="https://res.cloudinary.com/dwgk6byqs/video/upload/v1764198405/RespawnReviews_koptct.mkv"
+                type="video/mp4"
+              />
+              Tu navegador no soporta la reproducción de videos.
+            </video> -->
+          </div>
         </div>
+      </div>
+    </section>
+
+    <section id="descripcion" class="section-padding">
+      <div class="container fade-in">
+        <div class="profile-img-container">
+          <img src="media/fotoperfil.jpeg" alt="Carlos Encina" />
+        </div>
+        <h2><span class="color-acento">Carlos Encina</span></h2>
+        <p class="descripcion-perfil">
+          Transformo problemas complejos en arquitecturas escalables. Domino el stack de Spring y el desarrollo con Python, especializándome en la automatización de tareas y el manejo de grandes volúmenes de datos mediante procesos Batch. Tengo experiencia real integrando servicios de IA y trabajando en entornos ágiles con una perspectiva full-stack (Angular/Django).
+        </p>
       </div>
     </section>
 
@@ -213,28 +209,34 @@
     </section>
 
     <section id="contacto" class="section-padding">
-      <div class="container fade-in" style="text-align: center">
-        <h2>Contáctame</h2>
-        <p style="max-width: 600px; margin: 0 auto 2rem">
-          ¿Tienes algún proyecto en mente o simplemente quieres saludar? ¡Estaré
-          encantado de responderte!
-        </p>
-        <a href="mailto:carlos.encina.dev@gmail.com" class="btn">
-          <i class="fas fa-envelope"></i> Enviar Correo
-        </a>
-        <p
-          style="margin-top: 1rem; font-size: 0.9rem; color: var(--text-muted)"
-        >
-          carlos.encina.dev@gmail.com
-        </p>
-      </div>
-    </section>
+  <div class="container fade-in" style="text-align: center">
+    <h2>Contáctame</h2>
+    <p style="max-width: 600px; margin: 0 auto 2rem">
+      ¿Tienes algún proyecto en mente o simplemente quieres saludar? ¡Estaré
+      encantado de responderte!
+    </p>
+    
+    <a href="mailto:carlos.encina.dev@gmail.com" class="btn">
+      <i class="fas fa-envelope"></i> Enviar Correo
+    </a>
+
+    <div style="margin-top: 1rem; display: flex; align-items: center; justify-content: center; gap: 8px;">
+      <p id="emailText" style="margin: 0; font-size: 0.9rem; color: var(--text-muted)">
+        carlos.encina.dev@gmail.com
+      </p>
+      <button onclick="copyToClipboard()" style="background: none; border: none; cursor: pointer; color: var(--primary-color); padding: 5px;" title="Copiar correo">
+        <i id="copyIcon" class="far fa-copy"></i>
+      </button>
+    </div>
+  </div>
+</section>
 
     <footer>
       <div class="container">
-        <p>&copy; Carlos Encina 2025</p>
+        <p>&copy; Carlos Encina 2026</p>
       </div>
     </footer>
     <script src="app.js"></script>
+    
   </body>
 </html>

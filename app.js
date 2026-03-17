@@ -47,3 +47,22 @@ document.addEventListener('DOMContentLoaded', () => {
     observer.observe(element);
   });
 });
+
+function copyToClipboard() {
+  const email = document.getElementById('emailText').innerText;
+  const icon = document.getElementById('copyIcon');
+
+  navigator.clipboard.writeText(email).then(() => {
+    // Feedback visual: cambia el icono a un check
+    icon.classList.replace('far', 'fas');
+    icon.classList.replace('fa-copy', 'fa-check');
+    
+    // Vuelve al estado original después de 2 segundos
+    setTimeout(() => {
+      icon.classList.replace('fas', 'far');
+      icon.classList.replace('fa-check', 'fa-copy');
+    }, 2000);
+  }).catch(err => {
+    console.error('Error al copiar: ', err);
+  });
+}
